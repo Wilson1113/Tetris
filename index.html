@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2023</title>
+  </head>
+  <body>
+    <h1>Tetris</h1>
+    <main id="main" class="flex row">
+      <div id="holdBar" class="flex col">
+        <text>Hold</text>
+        <svg id="svgHold"></svg>
+      </div>
+      <svg id="svgCanvas">
+        <!-- game over text box -->
+        <g id="gameOver" visibility="hidden">
+          <rect x="26" y="120" fill="white" height="82" width="149"></rect>
+          <image id="nextGame" href="360_F_515141235_MoCb2kgQ3hwrPEjTIWTKkK6TgjDeekI5.jpg" x="73" y="128" width="100" height="100" />
+          <image id="replay" href="360_F_434098465_MdAbvMBL3IECJP8RJYpMid5umFelDJnQ.jpg" x="43" y="158" width="40" height="40" />
+          <text x="36" y="155">Game Over</text>
+        </g>
+      </svg>
+      <div id="sideBar" class="flex col">
+        <svg id="svgPreview"></svg>
+        <div id="info" class="flex col">
+          <div class="text">
+            <span class="left">Level: </span>
+            <span class="right" id="levelText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Score: </span>
+            <span class="right" id="scoreText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Highscore: </span>
+            <span class="right" id="highScoreText">...</span>
+          </div>
+        </div>
+        <svg id="replayMode" visibility ="hidden">
+          <g id="gameReplay">
+            <image id="newGame" href="326-3265399_new-game-button-start-new-game-button.png" x="10" y="35" width="150" height="50" />
+            <text x="10" y="30">Replay Mode</text>
+          </g>
+        </svg>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
